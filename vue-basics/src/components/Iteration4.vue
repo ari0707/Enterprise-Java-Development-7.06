@@ -5,7 +5,9 @@
 
     <div>
     <ul>
-        <li v-for="post in posts">{{ post.title }} {{ post.description }} {{ post.content }}</li>
+        <li v-for="post in posts" :key="post.id">
+            {{ post.title }} {{ post.description }} {{ post.content }}
+        </li>
     </ul>
     </div>
 
